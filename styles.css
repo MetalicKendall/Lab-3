@@ -1,0 +1,15 @@
+.heading{
+    font-size:x-large;
+    font-family: 'brush script MT', cursive;
+    color:black;
+}
+footer{
+    background-color: darkslateblue;
+    width: 100%;
+}
+.grid-container{
+    display: grid;
+    grid-template-rows:auto 1fr auto;
+    min-height: 100vh;
+    min-width: 100vw;
+}
