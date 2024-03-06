@@ -14,8 +14,8 @@
     
     
         <div>
-            <form id="registrationForm" onsubmit="return validateForm()">
-                <label for="name">Name:</label>
+            <form id="registrationForm" onsubmit="return validateForm()" action="result.html" method = "get">
+                <label for="name">First Name:</label>
                 <input type="text" id="name" name="NAME">
                 <span id="nameError" class="error"></span><br><br>
         
@@ -30,23 +30,22 @@
                 <label for="currentHome">Do you live with kids or other pets?</label>
                 <select id = "currentHome" name="CURRENTHOME">
                     <option value="">Select</option>
-                    <option value ="KIDS">Kids</option>
-                    <option value="PETS">Other Pets</option>
-                    <option value="NONE">None</option>
+                    <option value ="0">Kids</option>
+                    <option value="1">Other Pets</option>
+                    <option value="2">None</option>
                 </select><br><br>
                 <span id="currentHomeError" class="error"></span><br><br>
         
                 <label for="fence">Do you have a fence?</label>
                 <select id = "fence" name="FENCE">
                     <option value="">Select</option>
-                    <option value ="YES">Yes</option>
-                    <option value="NO">No</option>
+                    <option value ="0">Yes</option>
+                    <option value="1">No</option>
                 </select><br><br>
                 <span id="fenceError" class="error"></span><br><br>
         
 
                 <input type="submit" value="Submit">
-                <script src="script.js"></script>
             </form>
         </div>
 
@@ -55,5 +54,6 @@
 
     <footer>Kendall Josef</footer>
     </div>  
+    <script src="script.js"></script>
 </body>
 </html>
